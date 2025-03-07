@@ -1,0 +1,79 @@
+theme = "zola-theme-project-portfolio"
+
+# The URL the site will be built for
+base_url = "https://joaolago.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[translations]
+language_symbol = "🇬🇧"
+home = "Home"
+projects = "Projects"
+skills = "Skills"
+read_more = "Read More"
+skills_technologies = "Skills & Technologies"
+main_skills = "Main Skills"
+other_skills = "Additional Skills"
+words = "words"
+minutes = "minutes"
+
+[languages.de]
+title = "Projekt-Portfolio"
+taxonomies = [
+    { name = "projects", paginate_by = 5, feed = true },
+    { name = "skills", paginate_by = 5, feed = true },
+    { name = "blog-tags", paginated_by = 5, feed = true },
+]
+
+[languages.de.translations]
+language_symbol = "🇩🇪"
+home = "Home"
+projects = "Projekte"
+skills = "Qualifikationen"
+read_more = "Weiterlesen"
+skills_technologies = "Qualifikationen & Technologien"
+main_skills = "Top-Fähigkeiten"
+other_skills = "Weitere Fähigkeiten"
+words = "Wörter"
+minutes = "Minuten"
+
+[extra]
+# Put all your custom variables here
+
+[extra.navbar]
+title = "Project Portfolio"
+
+items = [
+    { lang = "en", links = [
+        { url = "blog", name = "Blog" },
+    ] },
+    { lang = "de", links = [
+        { url = "blog", name = "Blog" },
+    ] },
+]
+
+[extra.index]
+title = "Main Title"
+slogan = "My great slogan"
+image = "portrait.png"
+image_alt = "Placeholder text describing the index's image."
+
+[extra.social]
+codeberg = "https://codeberg.org/johndoe"
+github = "https://github.com/johndoe"
+gitlab = "https://gitlab.com/johndoe"
+twitter = "https://twitter.com/johndoe"
+mastodon = "https://social.somewhere.com/users/johndoe"
+linkedin = "https://www.linkedin.com/in/john-doe-b1234567/"
+stackoverflow = "https://stackoverflow.com/users/01234567/johndoe"
+telegram = "https://t.me/johndoe"
+email = "john.doe@gmail.com"
